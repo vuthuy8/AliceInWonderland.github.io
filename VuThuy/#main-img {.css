@@ -1,0 +1,214 @@
+#main-img {
+    display: inline;
+    margin: 20px auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    filter: grayscale(0);
+  }
+  
+  /* begin b1 */
+  #zoom-img {
+    pointer-events: none;
+    position: relative;
+    top: 50%;
+    left: 50%;
+  }
+  
+  #zoom {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.5), 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 115px;
+    background-color: white;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* modal image*/
+  body {font-family: Arial, Helvetica, sans-serif;}
+  
+  #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+/* begin b2 */
+.big-box{
+    height: 500px;
+    width: auto;
+    margin: 0px 200px 20px;
+  }
+  .box-child{
+    float: left;
+  }
+  .child-img:hover{
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  .child-img{
+    border-radius:5px;
+    border:4px solid white;
+    padding: 10px;
+  }
+  .box-copy{
+    padding-left: 40px;
+  }
+  .box-sub-text{
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #fff;
+  }
+  .box-sub-text span{
+    color: red;
+    font-size: 30px;
+  
+  }
+  .box-sub-text p{
+    color: black;
+    font-size: 14px;
+    text-decoration: line-through;
+    float: left;
+    display: contents;
+  }
+  .capacity{
+      border-radius: 5px;
+      border: 1px solid #fff;
+      width: 150px;
+      text-align: center;
+      margin-top: 10px;
+      display: inline-block;
+  }
+  .capacity:hover{
+    background-color: #fff;
+    color: white;
+    cursor: pointer;
+  }
+  .sale{
+    margin-top: 18px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+  }
+  .sale1{
+    border-radius: 5px;
+    border: 1px solid rgb(238, 198, 198);
+    background-color:#fff;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    padding: 10px 0;
+    font-weight: 600;
+  }
+  .sale2{
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 20px 10px;
+    padding: 5px;
+  }
+  .form{
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 10px;
+    margin-top: 18px;
+  }
+  .form p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+  }  
